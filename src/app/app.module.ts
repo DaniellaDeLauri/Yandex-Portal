@@ -16,7 +16,7 @@ import {RouterModule} from "@angular/router";
     BrowserModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'country/:id', component: CountryComponent},
+      {path: 'country/:x', component: CountryComponent},
     ])
   ],
   providers: [],

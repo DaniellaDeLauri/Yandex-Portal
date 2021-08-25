@@ -132,6 +132,8 @@ export class DataService {
     return this.data;
   }
   getCountry(id: any) {
-    return 0;
+    return this.data.find(value => {
+      return value._id == id;
+    })
   }
 }

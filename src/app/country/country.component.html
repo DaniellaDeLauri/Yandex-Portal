@@ -3,9 +3,9 @@
 </div>
 <section id="intro" style="background: url('https://gfhome.ru/sites/default/files/9_3.jpg') center/cover no-repeat">
   <div class="overlay">
-    <img src="portal.svg" onclick="spin()" id="spin-portals">
+    <img src="assets/portal.svg" onclick="spin()" id="spin-portals">
     <div class="intro-text">
-      <h1>Япония</h1>
+      <h1>{{country.title}}</h1>
     </div>
   </div>
 </section>
@@ -13,31 +13,15 @@
   <div class="category">
     <h2>Кино</h2>
     <div class="slider">
-      <div class="card collection-item film"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item film"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item film"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item film"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
+      <div *ngFor="let film of country.films" class="card collection-item film"
+           [style]="'background: url(' + film.image_v + ') center/cover no-repeat'"></div>
     </div>
   </div>
   <div class="category">
     <h2>Музыка</h2>
     <div class="slider">
-      <div class="card collection-item music"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item music"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item music"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item music"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item music"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
-      <div class="card collection-item music"
-           style="background: url('http://avatars.mds.yandex.net/get-ott/1672343/2a0000017b2ef687f66c240dab5722604a0b/640x360') center/cover no-repeat"></div>
+      <div *ngFor="let music of country.music" class="card collection-item music"
+           [style]="'background: url(' + music.image + ') center/cover no-repeat'"></div>
     </div>
   </div>
   <div class="category">

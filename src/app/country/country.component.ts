@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, RouterState} from "@angular/router";
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-country',
@@ -6,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./country.component.css']
 })
 export class CountryComponent implements OnInit {
+  id: any;
+  country: any;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute, public dataService: DataService) {
+    activatedRoute.queryParams
+      .subscribe(params => {
+          this.id = params.x;
+          console.log(1);
+          console.log(params.x);
+        }
+      );
+    this.country = dataService.getCountry(this.id);
+  }
 
   ngOnInit(): void {
   }
