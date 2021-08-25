@@ -1,0 +1,164 @@
+
+#back {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#spin-portals {
+  position: absolute;
+  right: calc(-10vw - 40px);
+  top: calc(-10vw - 40px);
+  width: calc(54vw + 100px);
+  height: calc(54vw + 100px);
+  transition: 0.5s;
+  transform: rotate(10deg) scale(1.2);
+}
+
+#intro {
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+}
+
+h1 {
+  font-size: calc(1.4vw + 30px);
+}
+
+.intro-text {
+  position: absolute;
+  top: calc(10vw + 15px);
+  left: 60px;
+  width: 40vw;
+  color: #ffffff;
+}
+
+#content {
+  width: calc(100vw - 60px);
+  overflow-x: hidden;
+  z-index: 2;
+  padding: 20px 30px;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#content h2 {
+  font-size: 30px;
+}
+
+.slider {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.card.collection-item {
+  margin-right: 20px;
+  border-radius: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card.collection-item:hover {
+  border-radius: 0;
+  transform: scale(1.02);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.film {
+  height: 30vh;
+  width: 55vh;
+}
+
+.music {
+  height: 35vh;
+  width: 35vh;
+}
+
+.product {
+  height: 45vh;
+  width: 35vh;
+  border: 2px solid #E1E1E1;
+}
+
+.product .bottom {
+  height: calc(40% - 20px);
+  padding: 10px 10px;
+}
+
+.product h4 {
+  font-size: 15px;
+  white-space: normal;
+  font-weight: 500;
+}
+
+.product .top {
+  height: 60%;
+}
+
+.product button {
+  cursor: pointer;
+  padding: 10px;
+  width: calc(100% - 20px);
+  font-family: Yandex Sans Display, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  background: #F1F3F5;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+.flight {
+  height: 100px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.flight h1 {
+  line-height: 100px;
+  margin-left: 40px;
+  font-size: calc(1vw + 20px);
+}
+
+.flight button {
+  cursor: pointer;
+  padding: 15px 20px;
+  font-family: Yandex Sans Display, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  line-height: 20px;
+  position: absolute;
+  color: #ffffff;
+  top: 25px;
+  right: 40px;
+  background: linear-gradient(108.43deg, #49C5E0 1.66%, #4F6ADE 32.87%, #C043BA 63.56%, #FAA530 99.87%);;
+}

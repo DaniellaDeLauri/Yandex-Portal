@@ -1,6 +1,6 @@
-<img src="assets/logo.png" id="logo">
+<img src="assets/logo.png" id="logo" routerLink="/">
 <section id="intro">
-  <img src="assets/portal.svg" onclick="spin()" id="spin-portals">
+  <img src="assets/portal.svg" (click)="spin()" id="spin-portals">
   <div class="intro-text">
     <h1>Побывайте там, где давно мечтали оказаться</h1>
   </div>
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="right-bar">
-    <div class="card collection" [routerLink]="'country/' + collection._id"
+    <div class="card collection" [routerLink]="'/country/' + collection._id"
          *ngFor="let collection of dataService.getData()">
       <h2>{{collection.title}}</h2>
       <div class="slider">

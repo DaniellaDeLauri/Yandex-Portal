@@ -1,14 +1,8 @@
 @import "../../assets/yandex-font/stylesheet.css";
 
-::-webkit-scrollbar {
-  display: none;
-}
 
 
 
-body {
-  background: #F1F3F5;
-}
 
 #logo {
   height: 40px;

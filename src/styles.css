@@ -1,6 +1,13 @@
 @import "assets/yandex-font/stylesheet.css";
 
 
+body {
+  background: #F1F3F5;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
