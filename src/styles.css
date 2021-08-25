@@ -1,0 +1,21 @@
+@import "assets/yandex-font/stylesheet.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  font-size: 0;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  transition: 0.2s;
+}
+
+h1 {
+  font-family: "Yandex Sans Display", sans-serif;
+}
+
+h2, h3 {
+  font-family: "Yandex Sans Text", sans-serif;
+  font-weight: 500;
+}

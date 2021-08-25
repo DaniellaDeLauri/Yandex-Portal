@@ -1,0 +1,150 @@
+@import "../../assets/yandex-font/stylesheet.css";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+body {
+  background: #F1F3F5;
+}
+
+#logo {
+  height: 40px;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+
+#spin-portals {
+  position: absolute;
+  right: calc(-10vw - 40px);
+  top: calc(-10vw - 40px);
+  width: calc(54vw + 100px);
+  height: calc(54vw + 100px);
+  transition: 0.5s;
+}
+
+#intro {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+}
+
+h1 {
+  font-size: calc(1.4vw + 30px);
+}
+
+.intro-text {
+  position: absolute;
+  top: calc(10vw + 15px);
+  left: 60px;
+  width: 40vw;
+}
+
+#content {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: -35vh;
+  z-index: 2;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.left-bar {
+  width: 27vw;
+  display: inline-block;
+}
+
+.right-bar {
+  width: 73vw;
+  display: inline-block;
+}
+
+#plus-status {
+  padding: 20px 25px;
+  height: 130px;
+  margin-left: 30px;
+}
+
+#plus-status h3 {
+  font-size: 32px;
+  width: calc(100% - 86px);
+  line-height: 110%;
+}
+
+#plus-status span {
+  font-size: 19px;
+  width: calc(100% - 86px);
+  line-height: 110%;
+  color: #767676;
+  position: absolute;
+  cursor: pointer;
+  bottom: 25px;
+}
+
+#plus-status .avatar {
+  width: 66px;
+  position: absolute;
+  right: 18px;
+  top: 23px;
+}
+
+.card.collection {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px 25px;
+}
+
+.card.collection h2 {
+  font-size: 27px;
+}
+
+.slider {
+  width: 100%;
+  height: 48vh;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.card.collection-item {
+  margin-right: 20px;
+  background: #F1F3F5;
+  border-radius: 18px;
+  height: 48vh;
+  width: 55vh;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card.collection-item:hover {
+  border-radius: 0;
+  transform: scale(1.02);
+}
+
+.card.collection-item .top {
+  height: calc(55% - 46px);
+  padding: 23px 20px;
+}
+
+.card.collection-item .bottom {
+  height: 45%;
+  background: #767676;
+}
+
+.card.collection-item h4 {
+  font-size: 23px;
+  margin-top: 4px;
+}
+
+.card.collection-item h5 {
+  font-size: 13px;
+  font-family: "Yandex Sans Display Light", serif;
+}
